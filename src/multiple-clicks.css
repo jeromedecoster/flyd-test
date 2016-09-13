@@ -1,0 +1,22 @@
+* {
+  font-family: monospace, sans-serif;
+}
+body {
+  font-family: monospace;
+  padding: 10px;
+  font-size: 1.1em;
+}
+#container {
+  margin-top: 50px
+}
+button {
+  padding: 4px;
+}
+a[home] {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #c00;
+  font-family: Times;
+  font-size: 16px;
+}

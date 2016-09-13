@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum</title>
+    <link href='sum.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body sum>
+    <a home href="/">home</a>
+    <div class="title-container">
+      <h1>Sum</h1>
+    </div>
+    <div class="column left-column a-exe">
+      <h2>Execute</h2>
+      <p>
+        <a click="x(1)">x(1)</a>
+        <a click="x(2)">x(2)</a>
+        <a click="x(3)">x(3)</a>
+        <a click="x(5)">x(5)</a>
+        <a click="x(8)">x(8)</a>
+        <a click="x(13)">x(13)</a>
+      </p>
+      <p>
+        <a click="y(1)">y(1)</a>
+        <a click="y(2)">y(2)</a>
+        <a click="y(3)">y(3)</a>
+        <a click="y(5)">y(5)</a>
+        <a click="y(8)">y(8)</a>
+        <a click="y(13)">y(13)</a>
+      </p>
+      <p>
+        <a click="inc(x)">x(x() + 1)</a>
+        <a click="dec(x)">x(x() - 1)</a>
+      </p>
+      <p>
+        <a click="inc(y)">y(y() + 1)</a>
+        <a click="dec(y)">y(y() - 1)</a>
+      </p>
+    </div>
+    <div class="column center-column">
+      <h2>Result</h2>
+      <p>
+        <code>x</code> is <code id="xBox">...</code>
+      </p>
+      <p>
+        <code>y</code> is <code id="yBox">...</code>
+      </p>
+      <p>
+        <code>sum</code> is <code id="sumBox">...</code>
+      </p>
+    </div>
+    <div class="column right-column">
+      <h2>Source code</h2>
+      <code class="code-block">var x = stream(10);
+var y = stream(20);
+var sum = flyd.combine(function(x, y) {
+  return x() + y();
+}, [x, y]);
+var elm = document.getElementById('sumBox');
+flyd.map(function(s) {
+  elm.innerHTML = s;
+}, sum);</code>
+    </div>
+    <script type="text/javascript" src="bundle.js"></script>
+  </body>
+</html>

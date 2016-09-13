@@ -1,0 +1,107 @@
+* {
+  font-family: monospace;
+}
+body {
+  text-align: center;
+  font-size: 1.0em;
+  margin: 0;
+}
+.column {
+  text-align: left;
+}
+@media (min-width: 400px) {
+  .column {
+    display: inline-block;
+    width: 26em;
+    vertical-align: top;
+    max-width: 100%;
+  }
+}
+@media (min-width: 450px) {
+  .center-column {
+     width: 9em;
+  }
+}
+@media (min-width: 800px) {
+  .right-column {
+    text-align: left;
+    margin-left: .4em;
+  }
+  .center-column {
+    text-align: center;
+  }
+  .left-column {
+    text-align: right;
+    margin-right: .4em;
+  }
+}
+@media (min-width: 900px) {
+  body { font-size: 1.1em; }
+}
+@media (min-width: 950px) {
+  body { font-size: 1.2em; }
+}
+@media (min-width: 1050px) {
+  body { font-size: 1.3em; }
+}
+@media (min-width: 1200px) {
+  body { font-size: 1.4em; }
+}
+a, code {
+  transition: .1s ease all;
+}
+h1 {
+  font-weight: 300;
+  font-size: 3.6em;
+}
+.title-container {
+}
+h1, h2, p {
+  margin: 15px 0;
+}
+.title-container h1 {
+  margin-top: 28px;
+}
+code {
+  font-family: monospace;
+  background: #ececec;
+  padding: .2em .3em;
+}
+.code-block {
+  white-space: pre;
+  padding: .5em;
+  display: block;
+  font-size: .9em;
+}
+code.flash {
+  background: black;
+  color: yellow;
+}
+#sumBox {
+  font-weight: bold;
+}
+.a-exe a {
+  cursor: pointer;
+  font-family: monospace;
+  color: #6851ff;
+  background: #ececec;
+  padding: 0 .1em;
+}
+.a-exe {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.a-exe a:active {
+  color: yellow;
+  background: black;
+}
+a[home] {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #c00;
+  font-family: Times;
+  font-size: 16px;
+}

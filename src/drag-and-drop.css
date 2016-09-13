@@ -1,0 +1,23 @@
+* {
+  font-family: monospace, sans-serif;
+}
+#drag {
+  width: 200px;
+  height: 200px;
+  background-color: purple;
+  position: absolute;
+  cursor: move;
+  color: white;
+  border-radius: 4px;
+  padding: 8px;
+  top: 55px;
+  left: 20px;
+}
+a[home] {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #c00;
+  font-family: Times;
+  font-size: 16px;
+}

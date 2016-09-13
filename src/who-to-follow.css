@@ -1,0 +1,51 @@
+* {
+  font-family: monospace, sans-serif;
+}
+body {
+  font-family: monospace;
+  padding: 10px;
+  font-size: 1.1em;
+}
+h2 {
+  margin: 0;
+  font-weight: bold;
+  display: inline-block;
+}
+#refresh {
+  font-size: 80%;
+  margin-left: 10px;
+}
+.container {
+  border: 2px solid #ECECEC;
+  margin-top: 40px;
+}
+.header {
+  background: #ECECEC;
+  padding: 5px;
+}
+.suggestions {
+  border: 2px solid #ECECEC;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: outside none none;
+  padding: 5px;
+  height: 40px;
+}
+li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  vertical-align: middle;
+}
+a[home] {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #c00;
+  font-family: Times;
+  font-size: 16px;
+}
